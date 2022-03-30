@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background: #1f2937;
+  font-size: 48px;
+  font-weight: 800;
+  font-family: Roboto, sans-serif;
+  color: #f9faf8;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  height: 200px;
+  align-items: center;
+}
+
+.desc-container {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.desc {
+  width: 800px;
+  padding: 32px;
+}
+
+button {
+  color: #f9faf8;
+  background: #3882f6;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+}
