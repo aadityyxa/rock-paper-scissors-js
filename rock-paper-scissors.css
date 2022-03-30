@@ -24,7 +24,8 @@ body {
   align-items: center;
 }
 
-.desc {
+.desc,
+.desc2 {
   width: 800px;
   padding: 32px;
 }

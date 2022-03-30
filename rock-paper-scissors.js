@@ -13,6 +13,7 @@ function playerInput(){ //passing an argument is necessary
     
     
     input = input.toLowerCase();
+    while(input == null) {prompt("Type in Rock, Paper, Or Scissors.")}
     if (choices.includes(input)) {
         return input; // QUESTION: IS IT POSSIBLE TO BOTH RETURN A VALUE AND CONSOLE.LOG IT AT THE END OF AN IF STATEMENT?
     }
@@ -61,7 +62,7 @@ function game() {
 
 }
 
-game();
+
 
 
 
