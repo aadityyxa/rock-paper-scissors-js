@@ -26,6 +26,43 @@ function computerChoice() {
 
 }
 
+function checkWinner(computerSelection,playerSelection) {
+
+    if (computerSelection === playerSelection) {
+        return "Round Tied."
+    } else if ( (computerSelection == "rock" && playerSelection == "paper") ||
+                (computerSelection == "paper" && playerSelection == "scissors") ||
+                (computerSelection == "scissors" && playerSelection == "rock")
+    ) {
+        return "You win!"
+    } else return "You lose. "
+
+}
+
+function playRound() {
+    const player = playerInput();
+    console.log(`You chose ${player}`);
+    const computer = computerChoice();
+    console.log(`The computer chose ${computer}`);
+
+    checkWinner(computer,player);
+    
+    console.log(checkWinner(computer,player));
+
+}
+
+
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        playRound();
+    }
+    
+
+}
+
+game();
+
 
 
 
