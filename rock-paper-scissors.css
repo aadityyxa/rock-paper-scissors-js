@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  height:100vh;
+  width:100vw;
+  overflow-x: hidden;
 }
 
 .header {
@@ -19,9 +22,7 @@ body {
   font-size: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  align-items: center;
+  align-items:center;
 }
 
 .desc,
@@ -37,4 +38,40 @@ button {
   border: none;
   border-radius: 16px;
   font-size: 16px;
+  /* margin-right:16px;
+  margin-left:16px; */
 }
+
+.player-choice{
+  padding:48px;
+  margin:16px;
+  border:4px solid black;
+  border-radius:16px;
+}
+
+.computer-choice{
+  border:4px solid black;
+  border-radius:16px;
+  padding:48px;
+  margin:16px;
+}
+
+#player-choice-text,#computer-choice-text{
+  height:30px;
+  margin-bottom:10px;
+}
+
+.tally{
+  display:flex;
+}
+
+.wins,.losses,.tie{
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.reset,.play-again{
+  visibility:hidden;
+  margin:5px;
+}
+
